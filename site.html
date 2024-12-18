@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квадрат числа</title>
+    <script>
+        function calculateSquare() {
+            // Получаем значение из поля ввода
+            var number = document.getElementById("numberInput").value;
+            // Преобразуем строку в число
+            number = parseFloat(number);
+            // Вычисляем квадрат
+            var square = number * number;
+            // Выводим результат
+            document.getElementById("result").innerText = "Квадрат числа: " + square;
+        }
+    </script>
+</head>
+<body>
+    <h1>Вычисление квадрата числа</h1>
+    <label for="numberInput">Введите число:</label>
+    <input type="number" id="numberInput" />
+    <button onclick="calculateSquare()">Вычислить квадрат</button>
+    <p id="result"></p>
+</body>
+</html>
